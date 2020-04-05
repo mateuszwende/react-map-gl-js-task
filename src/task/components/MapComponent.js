@@ -13,7 +13,6 @@ class MapComponent extends PureComponent {
       longitude: 20.962,
       zoom: 8,
     },
-    popupInfo: null,
   };
 
   _onMapClick = (e) => {
@@ -25,7 +24,6 @@ class MapComponent extends PureComponent {
         latitude: e.lngLat[1],
       },
     });
-    console.log("ADDED NEW MARKER");
   };
 
   _onMarkerDragEnd = (e, id) => {
